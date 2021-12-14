@@ -1,0 +1,90 @@
+.lineup {
+    background-color: $rosa;
+    padding: 5rem 0;
+    h3 , p {
+        text-align: center;
+        color: $blanco;
+    }
+    .dia {
+        text-transform: uppercase;
+        margin: 5rem 0;
+    }
+}
+
+.escenarios-contenedor {
+    @include tablet {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 5rem;
+    }
+
+    .nombre-escenario {
+        color: #000;
+        font-size: 2rem;   
+        font-weight: $delgada;  
+        padding-top: 3rem;   
+
+        @include tablet {
+            padding: 2rem;
+        }
+
+        &:after {
+            content: "";
+            width: 20rem;
+            height: 10rem;
+            display: block;
+            margin: 2rem auto 0 auto;
+            background-size: 15rem;
+            background-repeat: no-repeat;
+            background-position: center center;
+            
+        }
+
+    }
+}
+
+.escenario {
+    padding: 5rem auto;
+}
+
+
+.edm .nombre-escenario {
+
+    font-weight: bold;
+
+    &:after {
+        background-image: url(/src/img/iconos/icono_edm.png);
+    }
+}
+
+.rock .nombre-escenario {
+
+    font-weight: bold;
+
+    &:after {
+        background-image: url(/src/img/iconos/icono_rock.png);
+    }
+}
+
+.calendario {
+    padding: 0;
+    list-style: none;
+    text-align: start;
+
+    li{
+        padding: 2.5rem;
+        font-weight: $bold;
+        
+    }
+    span {
+        font-weight: $regular;
+    }
+}
+
+.color-amarillo {
+    background-color: darken($amarillo, 10);
+}
+
+.color-verde {
+    background-color: darken($verde, 10);
+}

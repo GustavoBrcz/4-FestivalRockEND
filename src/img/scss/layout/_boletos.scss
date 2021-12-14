@@ -1,0 +1,79 @@
+// .bg-verde:last-of-type{
+//     height: 100rem;
+// }
+
+.seccion_boletos {
+    display: flex;
+    flex-direction: column;
+}
+
+@include tablet {
+    .seccion_boletos {
+        display: grid;
+        grid-template-columns: 50%  50%;
+        gap: 3rem;
+    }
+    // .bg-verde:last-of-type{
+    //     height: 60rem;
+    // }
+}
+
+
+.titulo_boletos {
+    text-align: center;
+    color: $blanco;
+    text-decoration: underline;
+    padding-top: 3rem;
+}
+.boletos_beneficios {
+    text-align: center;
+    color: #000;
+    padding-top: 2rem;
+    span p{
+        color: $blanco;
+
+    }
+
+}
+
+.boletos {
+   
+    li {
+        list-style:none;
+        
+    }
+    ul {
+        background-color: $blanco;
+        padding: 0;
+        
+    }
+
+}
+
+.boletos_incluye {
+    background-color: $rosa;
+    padding: 1.5rem;
+    color: $blanco;
+    font-weight: $bold;
+    text-transform: uppercase;
+    
+}
+
+
+.boletos_precio {
+    background-color: $morado;
+    color: $blanco;
+    
+    p {
+        font-size: 3rem;
+        padding: 1.2rem;
+        margin-top: 0;
+    }
+}
+
+.boletos_lista {
+
+    .boletos_underline {
+        border-bottom: 1px solid rgb(189, 189, 189);
+    }
+}

@@ -1,0 +1,47 @@
+.informacion {
+
+    background-color: $blanco;
+    padding: 5rem;
+
+    @include tablet {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 5rem ;
+        gap: 3rem;
+    }
+
+    .informacion-imagen {
+        max-width: 100%;
+    }
+}
+
+.informacion-texto {
+    padding-top: 2rem;
+    
+    h3, h4 {
+        text-align: center;
+    }
+    h4 {
+        color: $rosa;
+    }
+    p {
+        text-align: justify;
+    }
+
+    
+    @include tablet {
+        h3, h4 {
+            text-align: initial;
+        }
+        h4 {
+            padding-top: 5rem;
+            font-size: 2rem;
+            font-weight: $bold;
+            color: $rosa;
+        }
+        p {
+            padding: 2rem 0;
+            text-align: justify; 
+        }
+    }
+}

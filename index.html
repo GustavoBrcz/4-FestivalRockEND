@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock & EDM Festival</title>
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+    <header class="header">
+        <div class="contenedor contenido-header">
+            <h1>Rock & Festival</h1>
+            
+            <nav class="navegacion-principal">
+                <a href="#lineup">Line Up</a>
+                <a href="#galeria">Galería</a>
+                <a href="#boletos">Boletos</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="video">
+        <div class="overlay">
+            <div class="contenedor contenido-video">
+                <h2>
+                    Rock & EDM Festival
+                    <span>Diciembre 2021, Funchal - Madeira</span>
+                </h2>
+            </div>
+        </div>
+        <video controls muted loop autoplay>
+            <source src="video/concierto.mp4" type="video/mp4">
+            <source src="video/concierto.ogg" type="video/ogg"> 
+            <source src="video/concierto.webm" type="video/webm"> 
+        </video>
+    </div>
+    
+    <div class="informacion contenedor">
+        <div class="informacion-imagen">
+            <img src="build/img/imagen_vocalista.jpg" alt="imagen_vocalista">
+        </div>
+        <div class="informacion-texto">
+            <h3>Rock & EDM Festival </h3>
+            <div>
+                <h4>Diciembre 2021, Funchal - Madeira</h4>
+            </div>
+            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, laudantium? Maiores neque doloremque harum ex, 
+                in odit ab consectetur nihil repellat, 
+                quos adipisci blanditiis ipsum officia, 
+                consequuntur libero quibusdam illo!
+            </p>
+        </div>
+    </div>
+
+    <section id= "lineup" class="lineup">
+        <h3 class="lineup-titulo">Line Up</h3>
+
+        <p class="dia">Sábado 11</p>
+
+        <div class="escenarios-contenedor contenedor">
+            <div class="escenario rock bg-amarillo">
+                <p class="nombre-escenario">Escenario Rock</p>
+
+                <ul class="calendario no-margin">
+                    <li class="color-amarillo">
+                        16:00 | <span class="bandas-bold">Metallica</span> 
+                    </li>
+                    <li>
+                        18:00 | <span class="bandas-bold">Muse</span> 
+                    </li>
+                    <li class="color-amarillo">
+                        20:00 | <span class="bandas-bold">Fall out Boy</span> 
+                    </li>
+                    <li>
+                        22:00 | <span class="bandas-bold">Linkin Park</span> 
+                    </li>
+                </ul>
+            </div>
+
+            <div class="escenario edm bg-verde">
+                <p class="nombre-escenario">Escenario EDM</p>
+                    
+                <ul class="calendario">
+                    <li class="color-verde">
+                        16:00 | <span class="bandas-bold">Tiesto</span> 
+                    </li>
+                    <li>
+                        18:00 | <span class="bandas-bold">Bruno Mars</span> 
+                    </li>
+                    <li class="color-verde">
+                        20:00 | <span class="bandas-bold">Monster and Men</span> 
+                    </li>
+                    <li>
+                        22:00 | <span class="bandas-bold">RBD</span> 
+                    </li>
+                </ul>
+
+            </div>
+        </div>    
+
+        <p class="dia">Domingo 12</p>
+
+        <div class="escenarios-contenedor contenedor">
+            <div class="escenario rock bg-verde">
+                <p class="nombre-escenario">Escenario Rock</p>
+
+                <ul class="calendario">
+                    <li class="color-verde">
+                        16:00 | <span class="bandas-bold">Paramore</span> 
+                    </li>
+                    <li>
+                        18:00 | <span class="bandas-bold">Megadeth</span> 
+                    </li>
+                    <li class="color-verde">
+                        20:00 | <span class="bandas-bold">Evanescen</span> 
+                    </li>
+                    <li>
+                        22:00 | <span class="bandas-bold">Papa Roach</span> 
+                    </li>
+                </ul>
+
+
+            </div>
+
+            <div class="escenario edm bg-amarillo">
+                <p class="nombre-escenario">Escenario EDM</p>
+                    
+                <ul class="calendario">
+                    <li class="color-amarillo">
+                        16:00 | <span class="bandas-bold">J Balvin</span> 
+                    </li>
+                    <li>
+                        18:00 | <span class="bandas-bold">Ozuna</span> 
+                    </li>
+                    <li class="color-amarillo">
+                        20:00 | <span class="bandas-bold">Caramelos de Cianuro</span> 
+                    </li>
+                    <li>
+                        22:00 | <span class="bandas-bold">Green Day</span> 
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="galeria" class="galeria contenedor">
+
+            <h3>Galería del Concierto</h3>
+
+            <ul class="galeria-imagenes"></ul>
+
+        </section>
+
+        <section id="boletos" class="boletos bg-verde">
+            <h3 class="titulo_boletos">Boletos</h3>
+
+            <section class="contenedor seccion_boletos">
+                <div class="boletos_beneficios">
+                    <span><p>Pase Día 1</p></span>
+
+                    <ul class="boletos_lista">
+                        <li>
+                            <p class="boletos_incluye">Incluye</p>
+                        </li>
+                        <li class="boletos_underline boletos_letra">
+                            <p>Acceso a ambos escenarios</p>
+                        </li>
+                        <li class="boletos_underline">
+                            <p>Comida y Bebida</p>
+                        </li>
+                        <li class="boletos_precio">
+                            <p>$100</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="boletos_beneficios">
+                    <span><p>Pase Día 2</p></span>
+
+                    <ul class="boletos_lista">
+                        <li>
+                            <p class="boletos_incluye">Incluye</p>
+                        </li>
+                        <li class="boletos_underline">
+                            <p>Acceso a ambos escenarios</p>
+                        </li>
+                        <li class="boletos_underline">
+                            <p>Comida y Bebida</p>
+                        </li>
+                        <li class="boletos_underline">
+                            <p>Camisa del Evento</p>
+                        </li>
+                        <li>
+                            <p>Acceso VIP</p>
+                        </li>
+                        <li class="boletos_precio">
+                            <p>$180</p>
+                        </li>
+                        
+                    </ul>
+                </div>
+
+            </section>
+            
+        </section>
+
+        <footer class="footer">     
+            <p>Rock & EDM Festival - Todos los Derechos Reservados. Gustavo Serrano</p>
+        </footer>
+
+    <script src="/build/js/bundle.js"></script>
+    
+</body>
+</html>
